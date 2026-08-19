@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style Preview — Minimal & Clean</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    background: #fafaf9;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+  nav {
+    padding: 40px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  nav .links a {
+    color: #1a1a1a;
+    text-decoration: none;
+    margin-left: 28px;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+  }
+  nav .links a:hover { opacity: 1; }
+  nav .brand { font-weight: 600; letter-spacing: -0.02em; }
+
+  .hero { padding-bottom: 100px; }
+  .hero .eyebrow {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.5;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    margin-bottom: 24px;
+  }
+  .hero p {
+    font-size: 17px;
+    opacity: 0.7;
+    max-width: 480px;
+  }
+
+  section { padding-bottom: 90px; }
+  h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.5;
+    margin-bottom: 28px;
+  }
+
+  .focus-list { display: flex; flex-direction: column; gap: 22px; }
+  .focus-item { display: flex; gap: 16px; }
+  .focus-item .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #1a1a1a; margin-top: 9px; flex-shrink: 0; opacity: 0.4;
+  }
+  .focus-item h3 { font-size: 17px; font-weight: 500; margin-bottom: 4px; }
+  .focus-item p { font-size: 15px; opacity: 0.6; }
+
+  .posts { display: flex; flex-direction: column; }
+  .post {
+    padding: 24px 0;
+    border-top: 1px solid #e5e4e2;
+    display: flex; justify-content: space-between; align-items: baseline;
+    text-decoration: none; color: inherit;
+  }
+  .post:last-child { border-bottom: 1px solid #e5e4e2; }
+  .post .title { font-size: 16px; font-weight: 500; }
+  .post .date { font-size: 13px; opacity: 0.45; flex-shrink: 0; margin-left: 20px; }
+
+  footer {
+    padding: 40px 0 60px;
+    font-size: 14px;
+    opacity: 0.5;
+    display: flex; gap: 20px;
+  }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="brand">Your Name</div>
+    <div class="links">
+      <a href="#">About</a>
+      <a href="#">Writing</a>
+      <a href="#">Substack</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="eyebrow">Hi, I'm [Your Name]</div>
+    <h1>A quiet corner of the internet for what I'm building, thinking about, and writing.</h1>
+    <p>One or two sentences that bring people into your world — what you care about, what kind of work you do, why this site exists.</p>
+  </div>
+
+  <section>
+    <h2>Currently focused on</h2>
+    <div class="focus-list">
+      <div class="focus-item">
+        <div class="dot"></div>
+        <div><h3>Project or theme one</h3><p>A short line on what it is and why it matters to you right now.</p></div>
+      </div>
+      <div class="focus-item">
+        <div class="dot"></div>
+        <div><h3>Project or theme two</h3><p>A short line on what it is and why it matters to you right now.</p></div>
+      </div>
+      <div class="focus-item">
+        <div class="dot"></div>
+        <div><h3>Something you're learning or exploring</h3><p>A short line on what it is and why it matters to you right now.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Recent writing</h2>
+    <div class="posts">
+      <a class="post" href="#"><span class="title">Title of a post you'd write</span><span class="date">Aug 2026</span></a>
+      <a class="post" href="#"><span class="title">Another post title, brainstorm-y</span><span class="date">Jul 2026</span></a>
+      <a class="post" href="#"><span class="title">A third one, maybe shorter form</span><span class="date">Jul 2026</span></a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="#">Substack</a>
+    <a href="#">Twitter/X</a>
+    <a href="#">Email</a>
+  </footer>
+</div>
+</body>
+</html>

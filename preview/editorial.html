@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style Preview — Editorial / Literary</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
+    color: #2b2420;
+    background: #f6f1e7;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 0 28px; }
+  nav {
+    padding: 44px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #d8cfbb;
+  }
+  nav .brand { font-size: 20px; font-weight: 600; font-style: italic; }
+  nav .links a {
+    color: #6b5d4a;
+    text-decoration: none;
+    margin-left: 26px;
+    font-size: 15px;
+  }
+  nav .links a:hover { color: #2b2420; }
+
+  .hero { padding: 70px 0 90px; text-align: center; }
+  .hero .eyebrow {
+    font-size: 14px;
+    font-style: italic;
+    color: #8a3324;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-bottom: 22px;
+  }
+  .hero p {
+    font-size: 18px;
+    color: #5a4d3e;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  section { padding-bottom: 80px; }
+  h2 {
+    font-size: 15px;
+    font-style: italic;
+    color: #8a3324;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  h2::after {
+    content: "";
+    display: block;
+    width: 40px; height: 1px;
+    background: #8a3324;
+    margin: 14px auto 0;
+    opacity: 0.4;
+  }
+
+  .focus-list { display: flex; flex-direction: column; gap: 30px; }
+  .focus-item { text-align: center; }
+  .focus-item h3 { font-size: 19px; font-weight: 600; margin-bottom: 6px; }
+  .focus-item p { font-size: 16px; color: #5a4d3e; max-width: 460px; margin: 0 auto; }
+
+  .posts { display: flex; flex-direction: column; gap: 34px; }
+  .post { text-decoration: none; color: inherit; display: block; text-align: center; }
+  .post .date { display: block; font-size: 13px; font-style: italic; color: #8a3324; margin-bottom: 6px; }
+  .post .title { font-size: 20px; font-weight: 600; }
+  .post .excerpt { font-size: 15px; color: #6b5d4a; margin-top: 6px; }
+
+  footer {
+    padding: 40px 0 70px;
+    font-size: 14px;
+    font-style: italic;
+    color: #8a7a63;
+    text-align: center;
+    border-top: 1px solid #d8cfbb;
+  }
+  footer a { color: #8a3324; margin: 0 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="brand">Your Name</div>
+    <div class="links">
+      <a href="#">About</a>
+      <a href="#">Writing</a>
+      <a href="#">Substack</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="eyebrow">A journal of sorts</div>
+    <h1>Notes on what I'm building, thinking about, and working through.</h1>
+    <p>One or two sentences that bring people into your world — what you care about, what kind of work you do, why this site exists.</p>
+  </div>
+
+  <section>
+    <h2>Currently Focused On</h2>
+    <div class="focus-list">
+      <div class="focus-item">
+        <h3>Project or theme one</h3>
+        <p>A short line on what it is and why it matters to you right now.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Project or theme two</h3>
+        <p>A short line on what it is and why it matters to you right now.</p>
+      </div>
+      <div class="focus-item">
+        <h3>Something you're learning or exploring</h3>
+        <p>A short line on what it is and why it matters to you right now.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Recent Writing</h2>
+    <div class="posts">
+      <a class="post" href="#">
+        <span class="date">August 2026</span>
+        <span class="title">Title of a post you'd write</span>
+        <div class="excerpt">A one-line teaser of what the piece is about.</div>
+      </a>
+      <a class="post" href="#">
+        <span class="date">July 2026</span>
+        <span class="title">Another post title, brainstorm-y</span>
+        <div class="excerpt">A one-line teaser of what the piece is about.</div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="#">Substack</a> · <a href="#">Twitter/X</a> · <a href="#">Email</a>
+  </footer>
+</div>
+</body>
+</html>
